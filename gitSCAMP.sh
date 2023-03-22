@@ -18,7 +18,10 @@ else
 	&& git config user.email \
 	&& printf "\nPUSHING TO:\n" \
 	&& git config --get remote.origin.url \
-	&& printf "\nEnter commit message (without quotes) to continue with commit/push (ctrl-c to stop): "
+	&& printf "\nON BRANCH (I say again):\n" \
+	&& git branch --show-current \
+	&& printf "\n(This will add tracked files, but you need to add untracked files manually!)\n " \
+	&& printf "Enter commit message (without quotes) to continue with commit/push (ctrl-c to stop): "
 	read commitmsg
 	printf "\nCOMMITTING:\n" \
 	&& git commit -am "$commitmsg" \
