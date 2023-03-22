@@ -1,5 +1,5 @@
 #!/bin/bash
-## Version: 1.0.0
+## Version: 1.1.0
 ## git Status to show if you are making any mistakes, git Commit Add with a Message, and then not to forget git Push.
 ## thus, SCAMP
 if [[ "$@" = -h ]] || [[ "$@" = --help ]];
